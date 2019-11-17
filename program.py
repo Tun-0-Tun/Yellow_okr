@@ -16,9 +16,11 @@ class MyWidget(QMainWindow):
 
     def run(self):
         self.fl = True
+        self.update()
 
     def run2(self):
         self.fl = False
+        self.update()
 
     def paintEvent(self, event):
         if self.fl:
